@@ -4,7 +4,10 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: rgb(63, 63, 63);
+    overflow: hidden;
 }
 
 .container {
@@ -151,6 +154,31 @@ body {
     padding: 3px 20px;
     border-radius: 40px;
 }
-#apiId input:focus{
+
+#apiId input:focus {
     outline: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+    padding: 5px;
+}
+
+footer div {
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 5px 10px;
+}
+
+footer i {
+    cursor: pointer;
+    margin: 5px;
 }
