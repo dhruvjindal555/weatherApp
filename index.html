@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/704fabc271.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="weather-.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div id="apiId">
+            <input type="text" placeholder="Firstly enter your api id">
+            <button class="btn"><img src="search.png" alt=""></button>
+        </div>
+        <div class="card">
+            <div class="top">
+                <input type="search" name="search" id="search" placeholder="Enter city name">
+                <button class="btn"><img src="search.png" alt=""></button>
+            </div>
+            <div id="invalid">Invalid City Name</div>
+            <div class="mid">
+                <div class="weatherLogo"><img src="clear.png" alt=""></div>
+                <div class="temp">20°C</div>
+                <div class="placeName">Germany</div>
+            </div>
+            <div class="bottom">
+                <div class="humidity">
+                    <img src="humidity.png" alt="">
+                    <div>
+
+                        <span id="humidityAge">34%</span>
+                        <div>Humidity</div>
+                    </div>
+                </div>
+
+                <div class="windSpeed">
+                    <img src="wind.png" alt="">
+                    <div>
+
+                        <span id="windSpeedAge">34km/h</span>
+                        <div>Wind Speed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
